@@ -1,0 +1,8 @@
+<div class="container">
+  <h1>Last 10 Tweets by <%= params[:username]%></h1>
+  <% @tweets.each do |tweet| %>
+  <p><strong>Tweeted:</strong> <%= tweet.text %></p>
+  <p><strong>At:</strong> <%= tweet.tweet_created_at %></p><br>
+  <% end %>
+
+</div>
